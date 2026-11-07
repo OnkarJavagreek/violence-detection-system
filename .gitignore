@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+.venv/
+
+# Django
+db.sqlite3
+media/*
+!media/.gitkeep
+
+# Environment / IDE
+.env
+.idea/
+.vscode/
+anaconda_projects/
+
+# Training data and videos (do not upload datasets)
+dataset/
+data/
+*.mp4
+*.avi

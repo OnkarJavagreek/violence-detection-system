@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Violence Detection</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 150px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: red;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Violence Detection System</h1>
+        <br>
+        <a href="{% url 'predict' %}">
+            <button class="btn">Start Real-Time Detection</button>
+        </a>
+    </div>
+</body>
+</html>
